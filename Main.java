@@ -10,14 +10,13 @@ public class Main {
         Relationships mishaDasha = new Relationships();
         mishaDasha.makeChild(dasha, misha);
         mishaDasha.makeChild(dasha, danya);
-        dasha.showChildren();
-        misha.showParents();
+        dasha.showChildren(dasha);
+        misha.showParents(misha);
 
-        Pets cat = new Pets("cat","Martin", 5);
-        Pets dog = new Pets("dog","Baron", 2);
-
+        Cat cat = new Cat("Martin", 5);
         cat.getVoice(misha);
-        dog.getVoice(danya);
+        Dog dog = new Dog("Archi", 2);
+        dog.getVoice(misha);
     }
 
 }
